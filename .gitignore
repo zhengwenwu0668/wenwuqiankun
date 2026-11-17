@@ -1,0 +1,37 @@
+# Gradle
+.gradle/
+build/
+app/build/
+
+# IDE
+.idea/
+*.iml
+
+# Kotlin
+.kotlin/
+
+# 本地配置（含机器特定 SDK 路径，禁止提交）
+local.properties
+
+# 工具目录
+.qoder/
+.qoder-office-xlsx-locks/
+
+# 临时/锁文件
+~$*
+*.tmp
+
+# APK 成品（通过 GitHub Release 发布，不进 git 仓库）
+*.apk
+
+# 备份/副本文件
+*.backup-*
+*副本*
+
+# 系统文件
+Thumbs.db
+.DS_Store
+
+# ��ʱ�����ļ�
+*_���_����.txt
+*_����.txt

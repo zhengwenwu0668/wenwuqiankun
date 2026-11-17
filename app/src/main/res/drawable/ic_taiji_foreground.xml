@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+    左白右黑太极（硬编码）：S 曲线从右上走向左下。
+    外弧 sweep=1 画右半圆（黑）；sweep=0 画左半圆（白）。
+    两段半圆共同走同一条 S 曲线（下半弧 sweep=1 走左凸；上半弧 sweep=0 走右凸）。
+-->
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="108dp"
+    android:height="108dp"
+    android:viewportWidth="108"
+    android:viewportHeight="108">
+    <path
+        android:fillColor="#000000"
+        android:pathData="M54,21 A33,33 0 0,1 54,87 A16.5,16.5 0 0,1 54,54 A16.5,16.5 0 0,0 54,21 Z" />
+    <path
+        android:fillColor="#FFFFFF"
+        android:pathData="M54,21 A33,33 0 0,0 54,87 A16.5,16.5 0 0,1 54,54 A16.5,16.5 0 0,0 54,21 Z" />
+    <!-- 阴眼：白鱼头部在上半区，点黑 -->
+    <path
+        android:fillColor="#000000"
+        android:pathData="M62.25,37.5 A8.25,8.25 0 1,1 45.75,37.5 A8.25,8.25 0 1,1 62.25,37.5 Z" />
+    <!-- 阳眼：黑鱼头部在下半区，点白 -->
+    <path
+        android:fillColor="#FFFFFF"
+        android:pathData="M62.25,70.5 A8.25,8.25 0 1,1 45.75,70.5 A8.25,8.25 0 1,1 62.25,70.5 Z" />
+</vector>
