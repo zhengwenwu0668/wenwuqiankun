@@ -10,8 +10,7 @@
 - **玄空飞星排盘**：运盘（永远顺飞）、山星、向星，支持下卦与替卦（兼向）
 - **二十四山罗盘**：三层同心圆，360° 刻度层、二十四山层、九宫格，坐山燕尾箭 + 向首实心箭头
 - **流年 / 流月紫白飞星**：立春切年、逐月逆推，勾选后叠加显示红年星 / 绿月星
-- **双 App 共存**：`文武乾坤`（com.example.wenwuqiankun）与 `张子易盘`（com.example.zhangziyipan）两个 flavor，仅包名不同
-
+- **App**：`文武乾坤`（com.example.wenwuqiankun）一个 flavor
 ## 技术栈
 
 - Kotlin + Jetpack Compose（BOM 2026.02.01 + Material3，Compose 编译器插件 2.2.10）
@@ -30,7 +29,6 @@
 ```powershell
 $env:JAVA_HOME = "C:\Program Files\Android\Android Studio\jbr"
 .\gradlew.bat :app:assembleWenwuDebug   # 文武乾坤
-.\gradlew.bat :app:assembleZzyDebug    # 张子易盘
 ```
 
 产物：`app\build\outputs\apk\{flavor}\debug\`
@@ -49,7 +47,7 @@ app/src/main/java/com/example/wenwuqiankun/
   MainActivity.kt
   domain/           # Constants / LichunTable / FeixingCalculator / YearMonthCalculator
   ui/               # LuopanScreen（参数区）/ LuopanCanvas（罗盘绘制）
-app/src/zzy/res/    # 张子易盘 flavor 资源
+app/src/zzy/res/    #  flavor 资源
 ```
 
 ## 文档
